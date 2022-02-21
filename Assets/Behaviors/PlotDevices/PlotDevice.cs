@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PlotDevice : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+  public string narrativeText = "You approached the floating yellow cube. This message appeared.";
+
+  void OnCollisionEnter(Collision collision)
+  {
+    if (collision.gameObject.tag == "Player")
     {
-        
+      Debug.Log(narrativeText);
     }
+  }
 }
