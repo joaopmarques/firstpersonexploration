@@ -25,7 +25,7 @@ Material:
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Opaque
@@ -96,7 +96,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -118,8 +118,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.98122495, b: 0.9213836, a: 1}
-    - _Color: {r: 1, g: 0.98122495, b: 0.9213836, a: 1}
-    - _EmissionColor: {r: 2.7395518, g: 2.7507486, b: 2.4566433, a: 1}
+    - _BaseColor: {r: 0.8962264, g: 0.84056455, b: 0.6735789, a: 1}
+    - _Color: {r: 0.8962264, g: 0.84056455, b: 0.6735789, a: 1}
+    - _EmissionColor: {r: 1.5686275, g: 1.3411765, b: 0.8235294, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
