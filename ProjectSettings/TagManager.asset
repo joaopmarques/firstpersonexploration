@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlotDevice
+  - Kill
+  - NextLevel
   layers:
   - Default
   - TransparentFX
