@@ -5,13 +5,21 @@ using UnityEngine;
 public class PlotDevice : MonoBehaviour
 {
 
-  public string narrativeText = "You approached the floating yellow cube. This message appeared.";
+  [TextArea(3, 10)]
+  public string plotText = "You approached the floating blue cube. This message appeared. It has little significance.";
+
+  GameObject narrativeManager;
+
+  void Start()
+  {
+    narrativeManager = GameObject.Find("NarrativeManager");
+  }
 
   void OnCollisionEnter(Collision collision)
   {
     if (collision.gameObject.tag == "Player")
     {
-      Debug.Log(narrativeText);
+      narrativeManager.GetComponent<NarrativeController>().currentPlot = plotText;
     }
   }
 }
