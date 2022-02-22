@@ -15,11 +15,16 @@ public class PlotDevice : MonoBehaviour
     narrativeManager = GameObject.Find("NarrativeManager");
   }
 
-  void OnCollisionEnter(Collision collision)
+  void OnTriggerEnter(Collider other)
   {
-    if (collision.gameObject.tag == "Player")
+    if (other.gameObject.tag == "Player")
     {
       narrativeManager.GetComponent<NarrativeController>().currentPlot = plotText;
     }
+  }
+
+  void OnTriggerExit(Collider other)
+  {
+    narrativeManager.GetComponent<NarrativeController>().currentPlot = "";
   }
 }
