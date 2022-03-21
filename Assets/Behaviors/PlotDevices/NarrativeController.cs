@@ -6,7 +6,6 @@ using System;
 
 public class NarrativeController : MonoBehaviour
 {
-
   public TMP_Text uiTextToDisplay;
   public string currentPlot;
 
